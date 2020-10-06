@@ -17,7 +17,7 @@ class FoxCommand(unittest.TestCase):
         self.options.headless=True
         #self.driver = webdriver.Firefox(firefox_options=self.options)
         self.driver = webdriver.Firefox(options=self.options)
-        self.driver.get("http://localhost:8002/prestashop/fr/")
+        self.driver.get("http://192.168.34.30/prestashop/fr/")
 
     def tests(self):
         """
