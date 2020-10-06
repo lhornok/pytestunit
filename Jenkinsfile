@@ -5,9 +5,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Tests..'
-                dir ('tests'){
-                  sh '/usr/bin/py.test-3 --junitxml results.xml foxtests.py'
-                }
+                sh '/usr/bin/py.test-3 --junitxml results.xml foxtests.py'
             }
         }
     }
